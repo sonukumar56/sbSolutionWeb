@@ -1,0 +1,171 @@
+section {
+  background-color: black;
+  width: 100%;
+}
+
+.carousel-item {
+  img {
+    object-fit: cover;
+  }
+}
+
+.introbox {
+  margin-top: -4.3rem;
+  margin-left: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  span {
+    background-color: rgba(53, 52, 72, 0.782);
+    // width: 60%;
+    padding: 1.2rem;
+    right: 0;
+    border-radius: 7px;
+    box-shadow: rgba(116, 163, 250, 0.25) 0px 0px 9px, rgba(138, 128, 231, 0.344) 0px 5px 9px;
+
+  }
+}
+
+hr {
+  width: 18%;
+  // margin-left: 21.5rem;
+  border: 1.5px solid rgb(6, 127, 249);
+}
+
+.what_to_do {
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.full_stack {
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.Sbsolution_partner {
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.what_to_do::after {
+  content: "Gen AI Capabilities";
+  //  background:url(https://www.google.co.in/images/srpr/logo11w.png) no-repeat;
+  opacity: 0.1;
+  margin-top: -25px;
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  color: rgb(0, 119, 255);
+  font-size: 4.5rem;
+}
+
+@media screen and (min-width: 990px) {
+  .carousel-item {
+    img {
+      height: 75vh;
+      object-fit: cover;
+    }
+  }
+
+  .expertise-card {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .full_stack {
+    span {
+      font-size: 1.8rem;
+    }
+
+    .Sbsolution_partner {
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .what_to_do {
+    font-size: 2.5rem;
+  }
+
+  .what_to_do::after {
+    content: "Gen AI Capabilities";
+    opacity: 0.1;
+    margin-top: -27px;
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    color: rgb(0, 119, 255);
+    font-size: 2.7rem;
+  }
+
+  .expertise-card {
+    width: 80%;
+  }
+}
+
+.sky-blue-shadow {
+  box-shadow: 0 4px 6px rgba(135, 206, 250, 0.5);
+  /* Sky blue color with transparency */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Smooth shadow transition */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sky-blue-shadow:hover {
+
+  transform: scale(1.03);
+  /* Increase size by 1.5 times */
+  // scale: 1.02;
+  box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+  /* Enhance shadow on hover */
+}
+
+.blue-shadow {
+  background-color: black;
+  box-shadow: 0 4px 6px rgba(135, 206, 250, 0.5);
+  /* Sky blue color with transparency */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Smooth shadow transition */
+  transition: transform 0.3s ease-in-out;
+}
+
+.blue-shadow:hover {
+  box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+  /* Enhance shadow on hover */
+  background-color: rgba(35, 35, 58, 0.5);
+  transform: scale(1.05);
+  /* Increase size by 1.5 times */
+
+}
+
+.text-under_line {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 119, 255);
+  /* Change to your desired color */
+  text-underline-offset: 6px;
+}
+
+.vertical-line {
+  border-left: 3px solid rgb(255, 255, 255);
+  /* Adjust thickness and color */
+  height: 100px;
+  /* Adjust height */
+}
+
+
+
+
+// .bg_card_section{
+//   background-image: url("/public/img/p1.jpg");
+//   background-size: cover; /* Adjusts the image to cover the entire element */
+//   background-position: center; /* Centers the image */
+//   background-repeat: no-repeat; /* Prevents tiling */
+//   height: 100vh; /* Sets the height of the element */
+//   width: 100%;
+// }

@@ -1,0 +1,50 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer
+{
+    height: 100vh;
+}
+
+ul,li{
+    cursor:pointer;
+}
+
+.hover-color{
+ li:hover{
+    color: #4489F6;;
+}
+}
+
+.issue-box {
+    font-size: 16.9px;
+    font-weight: bold;
+    position: fixed;          /* Fixes the box to the viewport */
+    bottom: 0px;             /* 20px from the bottom */
+    right: 15px;              /* 20px from the right */
+    background-color: #2f3a83; /* Bootstrap Primary Color */
+    color: white;
+    padding: 7.5px 25px;
+    border-radius: 27px 24px 0 27px;
+    z-index: 100;            /* Keeps the box above other elements */
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .logo::before{
+    content: 'Sb';
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .logo::after{
+    content: 'pvt ltd';
+    color: #ffffff;
+    font-size:9px;
+    padding: 0;
+    vertical-align: sub;
+    position: absolute;
+    margin-top: 22.2px;
+    margin-left: -12px;
+  }

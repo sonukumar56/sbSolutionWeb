@@ -1,0 +1,48 @@
+nav{
+    // height: 8vh;
+    background: black;
+    .nav-item,a{
+        color: white;
+    }
+    .nav-item,a:hover{
+        color: #4489F6;
+    }
+    .nav-item,a:active {
+        color: blue;
+    }
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  .navbar{
+    button[aria-expanded="true"] > span.close {
+      display: inline;
+      color: #ffffff;
+    //   opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    }
+  
+    button[aria-expanded="true"] > span.navbar-toggler-icon {
+      display: none;
+    }
+  
+    button[aria-expanded="false"] > span.close {
+      display: none;
+    }
+  }
+
+  .logo::before{
+    content: 'Sb';
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .logo::after{
+    content: 'pvt ltd';
+    color: #ffffff;
+    font-size:9px;
+    padding: 0;
+    vertical-align: sub;
+    position: absolute;
+    margin-top: 22.2px;
+    margin-left: -12px;
+  }

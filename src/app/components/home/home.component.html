@@ -1,0 +1,254 @@
+<section class="">
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner ">
+      <div class="carousel-item active ">
+        <img src="/img/p1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/p2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/p3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+<div class="introbox position-relative p-3 row" data-aos="fade-up">
+  <span class="col-11 col-md-10 col-lg-8 text-center">
+    <p>
+      We are an emerging software development & IT services company, listed as one among the ’50 Best Indian Founded
+      Companies’ by Silicon Review
+    </p>
+    <div class="d-flex justify-content-center">
+      <hr>
+    </div>
+    <p>
+      At Sb Solution, we engineer the ‘Next’ for the enterprise digital transformation journey. Innovative approach to
+      real-life problem solving paired with technological prowess helped us deliver winning solutions for diverse
+      business niches, over the years
+    </p>
+  </span>
+</div>
+<div class="p-3 what_to_do d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+  <span class="text-white">
+    Gen AI <span class="text-primary">Capabilities</span>
+  </span>
+</div>
+<section class="">
+  <div class="row d-flex p-4 justify-content-center">
+    @for (column of columns; track $index) {
+    <div class="col-12 col-md-4 mb-3">
+      <div class="card blue-shadow">
+        <div class="card_image d-flex justify-content-center">
+          <img [src]="column['image_url']" class="card-img-top" alt="..." style="width: 6rem;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center text-white" data-aos="fade-up">{{column.title}}</h5>
+          <p class="card-text text-center text-white" data-aos="fade-up">{{column.description}}</p>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
+<section class="">
+  <div
+    class="p-3 full_stack d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+    <span class="text-primary" data-aos="fade-up">
+      Full Stack <span class="text-white">Tech Capabilities</span>
+    </span>
+  </div>
+  <div class="d-flex justify-content-center" data-aos="fade-up">
+    <hr>
+  </div>
+  <div class="row d-flex px-5 py-0 justify-content-center">
+
+    @for (capabilities of full_stack_capabilities; track $index) {
+    <div class="col-12 col-md-6 col-lg-6 mb-4">
+      <div class="row g-0 border rounded-4 h-100 sky-blue-shadow">
+        <!-- Image Section -->
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center"
+          style="width: 7rem; height: 7rem;">
+          <img [src]="capabilities['image_url']" class="img-fluid rounded-start" alt="..."
+            style="width: 5rem; height: 5rem;">
+        </div>
+        <!-- Content Section -->
+        <div class="col-12 col-md-9 py-3 p-3 px-sm-0 ">
+          <div class="card-body">
+            <h5 class="card-title ">{{capabilities.title}}</h5>
+            <p class="card-text ">{{capabilities.description}}</p>
+            <p class="card-text d-block justify-content-center">
+              <a href="#" class="text-primary"><small>Read More</small></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+</section>
+
+<section class="">
+  <div
+    class="p-3 full_stack d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+    <span class="text-white" data-aos="fade-up">
+      Expertise Across <span class="text-primary">Key Industries</span>
+    </span>
+  </div>
+  <div class="d-flex justify-content-center" data-aos="fade-up">
+    <hr>
+  </div>
+  <div class="row d-flex justify-content-center" >
+
+    @for (card of cards; track $index) {
+    <div class="card m-2  sky-blue-shadow col-3 p-0 rounded-0 expertise-card" style="background: black;color: aliceblue;">
+      <img [src]="card['image_url']" class="card-img-top rounded-0" alt="...">
+      <div class="card-body">
+        <h5 class="card-title my-3">{{card.title}}</h5>
+        <p class="card-text">{{card.description}}</p>
+      </div>
+    </div>
+    }
+  </div>
+
+</section>
+
+<section class="">
+  <div
+    class="p-3 full_stack d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+    <span class="text-white" data-aos="fade-up">
+      Our <span class="text-primary">Accelerators</span>
+    </span>
+  </div>
+  <div class="d-flex justify-content-center" data-aos="fade-up">
+    <hr>
+  </div>
+  <div class="row d-flex justify-content-center mb-3">
+
+    @for (accelerator of accelerators; track $index) {
+    <div class="col-12 col-md-4 p-4">
+      <div class="card blue-shadow">
+        <div class="card_image d-flex justify-content-center">
+          <img [src]="accelerator['image_url']" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+    }
+    <div class="d-flex justify-content-center">
+      <a href="" class="under_line text-white">View All</a>
+      <!-- <hr> -->
+    </div>
+  </div>
+  <!-- <span class="wpr-feature-list-line" style="height: 157.552px;"></span> -->
+</section>
+
+<section class="">
+  <div
+    class="p-3 Sbsolution_partner d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+    <span class="text-white" data-aos="fade-up">
+      Why choose SbSolution <span class="text-primary">as your Technology Partner?</span>
+    </span>
+  </div>
+  <div class="d-flex justify-content-center" data-aos="fade-up">
+    <hr>
+  </div>
+  <div class="row d-flex px-5 py-0 justify-content-center">
+
+    @for (tech of tech_partner; track $index) {
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="row g-0 border rounded-4 h-100 sky-blue-shadow align-items-center">
+          
+          <!-- Image & Title Section (Flex for Mobile) -->
+          <div class="d-flex align-items-center">
+            <!-- Image -->
+            <div class="me-3 d-flex justify-content-center align-items-center" style="width: 5rem; height: 5rem;">
+              <img [src]="tech['image_url']" class="img-fluid rounded-start" alt="..." style="width: 100%; height: 100%;">
+            </div>
+            <!-- Title -->
+            <h5 class="card-title mb-0 flex-grow-1">{{ tech.title }}</h5>
+          </div>
+      
+          <!-- Content Section -->
+          <div class="col-12 py-2 px-3">
+            <p class="card-text">{{ tech.description }}</p>
+          </div>
+      
+        </div>
+      </div>
+      
+
+    }
+  </div>
+
+</section>
+
+<section class="">
+  <div
+    class="p-3 full_stack d-md-flex justify-md-content-right text-md-right d-flex justify-content-center text-center">
+    <span class="text-white" data-aos="fade-up">
+      Our <span class="text-primary">Clients</span>
+    </span>
+  </div>
+  <div class="d-flex justify-content-center" data-aos="fade-up">
+    <hr>
+  </div>
+  <div class="row d-flex px-5 py-0 justify-content-center">
+
+    @for (client of clients_img; track $index) {
+    <div class="col-6 col-md-2 col-lg-2">
+      <img [src]="client['image_url']" class="img-fluid rounded-start" alt="..." style="width: 13rem; height: 10rem;">
+    </div>
+    }
+  </div>
+
+</section>
+<!-- <section class="d-flex p-3">
+  <div class="row justify-content-center">
+    <div class="card m-2 col-3" style="width: 18rem;">
+      <img src="/img/p2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card m-2 col-3" style="width: 18rem;">
+      <img src="/img/p2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card m-2 col-3" style="width: 18rem;">
+      <img src="/img/p3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card m-2 col-3" style="width: 18rem;">
+      <img src="/img/p3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</section> -->
