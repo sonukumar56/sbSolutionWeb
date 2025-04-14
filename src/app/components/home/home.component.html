@@ -108,10 +108,11 @@
   <div class="d-flex justify-content-center" data-aos="fade-up">
     <hr>
   </div>
-  <div class="row d-flex justify-content-center" >
+  <div class="row d-flex justify-content-center">
 
     @for (card of cards; track $index) {
-    <div class="card m-2  sky-blue-shadow col-3 p-0 rounded-0 expertise-card" style="background: black;color: aliceblue;">
+    <div class="card m-2  sky-blue-shadow col-3 p-0 rounded-0 expertise-card"
+      style="background: black;color: aliceblue;">
       <img [src]="card['image_url']" class="card-img-top rounded-0" alt="...">
       <div class="card-body">
         <h5 class="card-title my-3">{{card.title}}</h5>
@@ -165,27 +166,27 @@
   <div class="row d-flex px-5 py-0 justify-content-center">
 
     @for (tech of tech_partner; track $index) {
-      <div class="col-12 col-md-6 col-lg-6 mb-4">
-        <div class="row g-0 border rounded-4 h-100 sky-blue-shadow align-items-center">
-          
-          <!-- Image & Title Section (Flex for Mobile) -->
-          <div class="d-flex align-items-center">
-            <!-- Image -->
-            <div class="me-3 d-flex justify-content-center align-items-center" style="width: 5rem; height: 5rem;">
-              <img [src]="tech['image_url']" class="img-fluid rounded-start" alt="..." style="width: 100%; height: 100%;">
-            </div>
-            <!-- Title -->
-            <h5 class="card-title mb-0 flex-grow-1">{{ tech.title }}</h5>
+    <div class="col-12 col-md-6 col-lg-6 mb-4">
+      <div class="row g-0 border rounded-4 h-100 sky-blue-shadow align-items-center">
+
+        <!-- Image & Title Section (Flex for Mobile) -->
+        <div class="d-flex align-items-center">
+          <!-- Image -->
+          <div class="me-3 d-flex justify-content-center align-items-center" style="width: 5rem; height: 5rem;">
+            <img [src]="tech['image_url']" class="img-fluid rounded-start" alt="..." style="width: 100%; height: 100%;">
           </div>
-      
-          <!-- Content Section -->
-          <div class="col-12 py-2 px-3">
-            <p class="card-text">{{ tech.description }}</p>
-          </div>
-      
+          <!-- Title -->
+          <h5 class="card-title mb-0 flex-grow-1">{{ tech.title }}</h5>
         </div>
+
+        <!-- Content Section -->
+        <div class="col-12 py-2 px-3">
+          <p class="card-text">{{ tech.description }}</p>
+        </div>
+
       </div>
-      
+    </div>
+
 
     }
   </div>
@@ -210,6 +211,147 @@
     </div>
     }
   </div>
+
+</section>
+<section class="mb-2 mt-5">
+  <div class="px-5 fs-3 d-md-flex justify-md-content-right text-md-right d-flex justify-content-between">
+    <span class="text-white">Sb Solution Reviews &nbsp; 4.8 <span class="text-danger fs-4"> ★★★★★ </span> <span
+        style="font-size: 12px;">8 REVIEW</span></span>
+    <p style="font-size: 10px;">powered by <span class="fs-6">Clutch</span></p>
+  </div>
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- Dots (Carousel Indicators) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <!-- <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner p-2">
+      <!-- First carousel item (active) -->
+      <div class="carousel-item active p-4">
+        <div class="review-box d-flex justify-content-between p-3 flex-column flex-md-row">
+          <!-- Each card takes full width on small screens and 45% width on medium and larger screens -->
+          <div class="card p-3 ms-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second carousel item -->
+      <div class="carousel-item p-4">
+        <div class="d-flex justify-content-between p-3 flex-column flex-md-row">
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+          <div class="card p-3 me-3 mb-3 mx-auto w-100 w-md-45 fs-6">
+            <strong>⭐ 4.5</strong>
+            <p>"They’re very knowledgeable and have great attitudes."</p>
+            <p><strong>VP Engineering</strong> — Payment Platform</p>
+            <small class="text-muted">Verified Review</small>
+          </div>
+        </div>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+
+
+    <!-- Navigation Arrows -->
+    <button class="carousel-control-prev " style="width: 5%;" type="button" data-bs-target="#testimonialCarousel"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" style="width: 5%;" type="button" data-bs-target="#testimonialCarousel"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+</section>
+<section class="mb-2 mt-5">
+  <div class="d-md-flex justify-md-content-right text-md-right d-flex w-100">
+    <div>
+      <img src="/img/p1.jpg" width="500" alt="">
+    </div>
+    <div class="w-100">
+      <form class="contact-form">
+        <div class="form-group">
+          <div class="w-100 me-2">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
+          </div>
+          <div class="w-100">
+            <label for="mobile_no">Mobile Number *</label>
+            <input type="mobile_no" id="mobile_no" name="mobile_no" required placeholder="Enter Your Mobile Number">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="w-100 me-2">
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="email" required placeholder="Enter Your Email">
+          </div>
+          <div class="w-100">
+            <label for="designation">Designation *</label>
+            <input type="designation" id="designation" name="designation" required placeholder="Enter Your Designation">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="w-100">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 
 </section>
 <!-- <section class="d-flex p-3">

@@ -169,3 +169,80 @@ hr {
 //   height: 100vh; /* Sets the height of the element */
 //   width: 100%;
 // }
+.carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #bbb;  /* Light gray color for inactive dots */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;  /* Blue color for active dot */
+}
+
+.carousel-item{
+  .card:hover{
+      // :hover{
+        box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+        /* Enhance shadow on hover */
+        // background-color: rgba(35, 35, 58, 0.5);
+        transform: scale(1.03);
+      // }
+  }
+}
+.contact-form {
+  background: #d2cece;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  // border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}

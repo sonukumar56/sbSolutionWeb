@@ -213,4 +213,11 @@ export class HomeComponent{
       'image_url':'/img/11.png',
     }
  ];
+//   scrollCards(direction:any) {
+//   let container = document.getElementById('cardScroll');
+//   let scrollAmount = 260; 
+//     container.scrollLeft += direction * scrollAmount;
+// }
 }
+
+
